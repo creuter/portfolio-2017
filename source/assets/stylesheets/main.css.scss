@@ -1,5 +1,11 @@
+// Setup
 @import "bourbon";
 @import "neat";
+
+// Base
 @import "fonts";
 @import "variables";
 @import "typography";
+
+// Components
+@import "container";
