@@ -2,6 +2,10 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   -webkit-font-smoothing: antialiased;
+  background-image: url("/assets/images/background.svg");
+  background-position: right;
+  background-repeat: repeat-y;
+  background-size: 10vw;
   line-height: 1.6;
   padding: 4em 8em;
 }
