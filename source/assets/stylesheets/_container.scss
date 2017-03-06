@@ -1,4 +1,6 @@
 .container {
+  @include margin(null auto);
+  @include padding(null 1.5em);
   max-width: 32em;
   width: 100%;
 }

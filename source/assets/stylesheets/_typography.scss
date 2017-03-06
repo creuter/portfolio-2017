@@ -1,13 +1,31 @@
+html {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
+  @include padding(4.5em null 3em);
+  background-image: url("/assets/images/background.svg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: 3em;
   color: $base-font-color;
   font-family: $base-font-family;
-  -webkit-font-smoothing: antialiased;
-  background-image: url("/assets/images/background.svg");
-  background-position: right;
-  background-repeat: repeat-y;
-  background-size: 10vw;
+  font-size: 0.875em;
   line-height: 1.6;
-  padding: 4em 8em;
+
+  @media (min-width: 30em) {
+    font-size: 1em;
+  }
+
+  @media (min-width: 40em) {
+    font-size: 1.125em;
+  }
 }
 
 h1,
@@ -34,6 +52,7 @@ a {
 h1 {
   color: $minsk;
   font-family: $heading-font-family;
+  font-size: 1.5em;
   font-weight: 400;
   margin-bottom: 1.5em;
 }
