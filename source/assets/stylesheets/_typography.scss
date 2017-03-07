@@ -1,19 +1,11 @@
 html {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 body {
   @include padding(4.5em null 3em);
-  background-image: url("/assets/images/background.svg");
-  background-position: top;
-  background-repeat: repeat-x;
-  background-size: 3em;
+  border-top: 3px solid $minsk;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: 0.875em;
@@ -25,6 +17,10 @@ body {
 
   @media (min-width: 40em) {
     font-size: 1.125em;
+  }
+
+  @media (min-width: 60em) {
+    font-size: 1.25em;
   }
 }
 
