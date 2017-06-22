@@ -1,26 +1,23 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 body {
-  @include padding(4.5em null 3em);
-  border-top: 3px solid $minsk;
+  background-color: #f7d1be;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: 0.875em;
   line-height: 1.6;
+  padding: 2.5em;
 
   @media (min-width: 30em) {
+    padding: 7em;
     font-size: 1em;
-  }
-
-  @media (min-width: 40em) {
-    font-size: 1.125em;
-  }
-
-  @media (min-width: 60em) {
-    font-size: 1.25em;
   }
 }
 
@@ -30,33 +27,74 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $heading-font-family;
   line-height: 1.2;
   margin-top: 0;
 }
 
-a {
-  color: $action-color;
-  transition: color 0.15s ease-in;
+h1 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  position: relative;
+  text-align: center;
 
-  &:active,
-  &:focus,
-  &:hover {
-    color: shade($action-color, 25%);
+  @media (min-width: 30em) {
+    text-align: initial;
+    margin-bottom: 0.75em;
+  }
+
+  &::before {
+    @include margin(null 0.5em 0.5em null);
+    content: "\1F44B";
+    display: block;
+    right: 100%;
+
+    @media (min-width: 30em) {
+      position: absolute;
+    }
   }
 }
 
-h1 {
-  color: $minsk;
-  font-family: $heading-font-family;
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-bottom: 1.5em;
+h2 {
+  font-size: 1.375em;
+  margin-bottom: 0.5em;
 }
 
-h2 {
-  color: $purple;
-  font-size: 0.75em;
-  letter-spacing: 0.25em;
-  margin-bottom: 1em;
-  text-transform: uppercase;
+a {
+  border-bottom: 0.1em solid $action-color;
+  color: inherit;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+
+  &:hover {
+    border-color: $base-font-color;
+  }
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.75;
+  margin: 0 0 1em;
+
+  li & {
+    font-size: 1.125em;
+  }
+}
+
+ul {
+  @include margin(4.5em null 3em);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1.5em;
+
+  @media (min-width: 42em) {
+    width: 45%;
+  }
 }

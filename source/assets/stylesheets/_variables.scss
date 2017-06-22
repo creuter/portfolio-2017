@@ -1,11 +1,12 @@
 // Fonts
-$base-font-family: "clear-sans", $font-stack-helvetica;
-$heading-font-family: $font-stack-georgia;
+$base-font-family: "ff-meta-web-pro", "freight-sans-pro", $font-stack-system;
+$heading-font-family: "freight-text-pro", $font-stack-georgia;
 
 // Colors
-$dark-gray: #444355;
-$minsk: #2f2f80;
-$orange: #ff746e;
-$purple: #bf7afb;
-$action-color: $orange;
-$base-font-color: $dark-gray;
+$dark-gray: #333;
+$blue: #3095f5;
+$just-right: #f7d1be;
+
+$body-background-color: $just-right;
+$action-color: $blue;
+$base-font-color: mix($body-background-color, $dark-gray, 5%);
