@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   padding: 2.5em;
 
-  @media (min-width: 30em) {
+  @media (min-width: 32em) {
     padding: 7em;
     font-size: 1em;
   }
@@ -38,20 +38,11 @@ h1 {
   position: relative;
   text-align: center;
 
-  @media (min-width: 30em) {
-    text-align: initial;
-    margin-bottom: 0.75em;
-  }
-
   &::before {
     @include margin(null 0.5em 0.5em null);
     content: "\1F44B";
     display: block;
     right: 100%;
-
-    @media (min-width: 30em) {
-      position: absolute;
-    }
   }
 }
 
@@ -61,14 +52,12 @@ h2 {
 }
 
 a {
-  border-bottom: 0.1em solid $action-color;
   color: inherit;
   display: inline-block;
   position: relative;
-  text-decoration: none;
 
   &:hover {
-    border-color: $base-font-color;
+    color: $action-color;
   }
 }
 
@@ -76,25 +65,13 @@ p {
   font-size: 1.25em;
   line-height: 1.75;
   margin: 0 0 1em;
-
-  li & {
-    font-size: 1.125em;
-  }
 }
 
 ul {
   @include margin(4.5em null 3em);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: none;
   padding: 0;
 }
 
 li {
-  margin-bottom: 1.5em;
-
-  @media (min-width: 42em) {
-    width: 45%;
-  }
+  margin-bottom: 2em;
 }
