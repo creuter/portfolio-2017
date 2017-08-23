@@ -1,0 +1,8 @@
+.projects {
+  @include margin(4.5em null 3em);
+  list-style-type: disc;
+}
+
+.project {
+  margin-bottom: 2em;
+}

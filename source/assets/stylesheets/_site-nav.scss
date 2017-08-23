@@ -1,0 +1,17 @@
+.site-nav {
+  text-align: right;
+  margin-bottom: 1.5em;
+}
+
+.site-nav__item {
+  display: inline-block;
+
+  & + & {
+    margin-left: 1em;
+  }
+}
+
+.site-nav__link[aria-current] {
+  font-weight: 800;
+  text-decoration: none;
+}

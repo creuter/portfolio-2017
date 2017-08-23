@@ -1,5 +1,12 @@
+activate :aria_current
 activate :autoprefixer
 activate :directory_indexes
+
+activate :blog do |blog|
+  blog.calendar_template = "calendar.html"
+  blog.paginate = true
+  blog.tag_template = "tag.html"
+end
 
 set :css_dir, "assets/stylesheets"
 set :fonts_dir, "assets/fonts"

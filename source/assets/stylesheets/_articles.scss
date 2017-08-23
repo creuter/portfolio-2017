@@ -1,0 +1,10 @@
+.article {
+  @include padding(1em null 4.5em);
+  border-top: 1px dotted rgba($base-font-color, 0.25);
+  margin-bottom: 1.5em;
+}
+
+.article__meta {
+  display: flex;
+  justify-content: space-between;
+}

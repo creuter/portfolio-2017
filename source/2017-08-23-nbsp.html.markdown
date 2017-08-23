@@ -1,0 +1,14 @@
+---
+title: nbsp
+date: 2017-08-23 19:53 UTC
+tags: markup, typography
+---
+
+Using `&nbsp;` between the last two words in a heading can prevent the last word
+from wrapping on its own as a widow.
+
+```html
+<h1>The last two words wrap&nbsp;together.</h1>
+```
+
+![Example](2017-08-23-nbsp/widow.gif)

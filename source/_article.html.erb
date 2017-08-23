@@ -1,0 +1,14 @@
+<li class="article">
+  <%= article.body %>
+
+  <div class="article__meta">
+    <time class="article__date"><%= article.date.strftime('%b %e, %Y') %></time>
+    <ul>
+      <% article.tags.each do |tag| %>
+        <li class="tag">
+          <%= link_to tag, tag_path(tag), class: "tag__link" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</li>
