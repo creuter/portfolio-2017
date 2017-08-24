@@ -8,17 +8,8 @@
     <script src="https://use.typekit.net/xxo2eza.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body>
-    <nav class="site-nav">
-      <ul class="site-nav__list">
-        <li class="site-nav__item">
-          <%= current_link_to "Home", "/", class: "site-nav__link" %>
-        </li>
-        <li class="site-nav__item">
-          <%= current_link_to "Blog", "/blog/", class: "site-nav__link" %>
-        </li>
-      </ul>
-    </nav>
+  <body class="<%= page_classes %>">
+    <%= partial "site_header" %>
     <%= yield %>
     <%= partial "partials/analytics" %>
   </body>

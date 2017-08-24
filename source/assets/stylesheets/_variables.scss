@@ -1,5 +1,5 @@
 // Fonts
-$base-font-family: "ff-meta-web-pro", "freight-sans-pro", $font-stack-system;
+$base-font-family: "interface", $font-stack-system;
 $heading-font-family: "freight-text-pro", $font-stack-georgia;
 
 // Colors
@@ -10,3 +10,6 @@ $just-right: #f7d1be;
 $body-background-color: $just-right;
 $action-color: $blue;
 $base-font-color: mix($body-background-color, $dark-gray, 10%);
+
+// Breakpoints
+$layout-breakpoint: 640px;

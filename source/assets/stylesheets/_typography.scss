@@ -8,15 +8,22 @@ html {
 }
 
 body {
-  background-color: #f7d1be;
+  background-color: $body-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
-  font-size: 0.875em;
+  font-size: 0.8em;
   line-height: 1.6;
   padding: 2.5em;
 
   @media (min-width: 32em) {
-    padding: 3em;
+    border: 1em solid tint($body-background-color, 25%);
+  }
+
+  @media (min-width: 48em) {
+    padding: 6em;
+  }
+
+  @media (min-width: 91em) {
     font-size: 1em;
   }
 }
@@ -34,16 +41,7 @@ h6 {
 
 h1 {
   font-size: 2em;
-  margin-bottom: 1.5em;
-  position: relative;
-  text-align: center;
-
-  &::before {
-    @include margin(null 0.5em 0.5em null);
-    content: "\1F44B";
-    display: block;
-    right: 100%;
-  }
+  margin-bottom: 0;
 }
 
 h2 {

@@ -1,5 +1,8 @@
 .container {
-  @include margin(null auto);
-  max-width: 100%;
-  width: 32em;
+  max-width: 52em;
+  width: 100%;
+
+  @media (min-width: $layout-breakpoint) {
+    padding-left: 4.5em;
+  }
 }

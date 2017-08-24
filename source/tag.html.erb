@@ -3,9 +3,11 @@ pageable: true
 per_page: 12
 ---
 
-<div class="container">
-  <h1>Nuggets tagged '<%= tagname %>'</h1>
+<%- content_for :page_title do %>
+  Nuggets tagged '<%= tagname %>'
+<% end %>
 
+<div class="container">
   <% if paginate && num_pages > 1 %>
     <p>Page <%= page_number %> of <%= num_pages %></p>
 

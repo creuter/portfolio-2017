@@ -1,8 +1,15 @@
 .projects {
   @include margin(4.5em null 3em);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: disc;
 }
 
 .project {
   margin-bottom: 2em;
+
+  @media (min-width: 52em) {
+    width: 44%;
+  }
 }
