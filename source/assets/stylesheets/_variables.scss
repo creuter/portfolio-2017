@@ -11,5 +11,8 @@ $body-background-color: $just-right;
 $action-color: $blue;
 $base-font-color: mix($body-background-color, $dark-gray, 10%);
 
+// Other Sizes
+$base-border-radius: 3px;
+
 // Breakpoints
 $layout-breakpoint: 640px;

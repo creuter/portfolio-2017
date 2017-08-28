@@ -64,3 +64,12 @@ p {
   line-height: 1.75;
   margin: 0 0 1em;
 }
+
+pre {
+  background-color: tint($body-background-color, 10%);
+  border-radius: $base-border-radius;
+  border: 1px solid rgba($base-font-color, 0.1);
+  font-size: 1.25em;
+  overflow: auto;
+  padding: 1em;
+}
