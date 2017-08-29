@@ -28,9 +28,7 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 
 configure :development do
-  activate :livereload do |reload|
-    reload.no_swf = true
-  end
+  activate :livereload
 end
 
 configure :production do
