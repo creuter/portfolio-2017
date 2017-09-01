@@ -11,6 +11,13 @@
       <li class="site-nav__item">
         <%= current_link_to "Blog", "/blog/", class: "site-nav__link" %>
       </li>
+      <li class="site-nav__item">
+        <%= link_to(
+          "Say Hello",
+          "mailto:hello@christianreuter.io?subject=Hola",
+          class: "site-nav__link"
+        ) %>
+      </li>
     </ul>
   </nav>
 </div>

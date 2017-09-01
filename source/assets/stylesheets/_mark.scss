@@ -1,5 +1,16 @@
 .mark {
+  margin-right: 1.5em;
+
+  &:hover {
+    color: $base-font-color;
+
+    .mark__fill {
+      fill: tint($action-color, 20%);
+    }
+  }
+}
+
+.mark__icon {
   @include size(3em);
   flex-shrink: 0;
-  margin-right: 1.5em;
 }
