@@ -6,12 +6,13 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Christian Reuter</title>
     <%= stylesheet_link_tag "main" %>
-    <script src="https://use.typekit.net/xxo2eza.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body class="<%= page_classes %>">
-    <%= partial "site_header" %>
-    <%= yield %>
+    <div class="container">
+      <%= partial "site_nav" %>
+      <%= yield %>
+      <%= partial "site_footer" %>
+    </div>
     <%= partial "partials/analytics" %>
   </body>
 </html>

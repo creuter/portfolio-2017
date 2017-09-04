@@ -1,5 +1,5 @@
 ---
-title: nbsp
+title: Preventing widows with a nonbreaking space
 date: 2017-08-23 19:53 UTC
 tags: markup, typography
 ---

@@ -1,8 +1,10 @@
 .container {
-  max-width: 52em;
-  width: 100%;
+  @include margin(null auto);
+  max-width: 66em;
 
   @media (min-width: $layout-breakpoint) {
-    padding-left: 4.5em;
-  }
+    display: grid;
+    grid-column-gap: $base-spacing;
+    grid-template-columns: minmax(10em, 20%) minmax(30em, 2fr) 1fr;
+  }
 }

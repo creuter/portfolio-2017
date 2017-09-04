@@ -1,18 +1,23 @@
+// Spacing
+$base-line-height: 1.6;
+$base-spacing: $base-line-height * 1em;
+$section-spacing: $base-line-height * 3em;
+
 // Fonts
 $base-font-family: "interface", $font-stack-system;
-$heading-font-family: "freight-text-pro", $font-stack-georgia;
 
 // Colors
 $dark-gray: #333;
-$blue-bell: #b8a4d9;
-$watusi: #f9ddce;
+$blue: #0078ff;
+$alabaster: #f5f6f7;
 
-$body-background-color: $watusi;
-$action-color: $blue-bell;
+$body-background-color: $alabaster;
+$action-color: $blue;
 $base-font-color: mix($body-background-color, $dark-gray, 10%);
 
 // Other Sizes
 $base-border-radius: 3px;
 
 // Breakpoints
-$layout-breakpoint: 640px;
+$layout-breakpoint: 720px;
+$wide-layout-breakpoint: 900px;

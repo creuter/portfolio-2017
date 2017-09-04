@@ -1,15 +1,13 @@
-.projects {
-  @include margin(4.5em null 3em);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: disc;
+.projects__title {
+  grid-column: 1;
+  margin-bottom: $base-spacing;
 }
 
-.project {
-  margin-bottom: 2em;
-
-  @media (min-width: 52em) {
-    width: 44%;
-  }
+.projects {
+  display: grid;
+  grid-column-gap: $base-spacing;
+  grid-column: 2 / span 2;
+  grid-row-gap: $base-spacing;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: $section-spacing;
 }

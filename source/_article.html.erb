@@ -1,23 +1,27 @@
 <li class="article" role="article">
-  <h2 class="article__title"><%= article.title %></h2>
+  <header class="article__header">
+    <h2 class="article__title"><%= article.title %></h2>
 
-  <ul class="article__meta">
-    <li class="article__meta-item">
-      <%= partial "clock_icon" %>
-      <time><%= article.date.strftime('%b %e, %Y') %></time>
-    </li>
+    <ul class="article__meta">
+      <li class="article__meta-item">
+        <%= partial "clock_icon" %>
+        <time><%= article.date.strftime('%b %e, %Y') %></time>
+      </li>
 
-    <li class="article__meta-item">
-      <%= partial "tag_icon" %>
-      <ul>
-        <% article.tags.each do |tag| %>
-          <li class="tag">
-            <%= link_to tag, tag_path(tag) %>
-          </li>
-        <% end %>
-      </ul>
-    </li>
-  </ul>
+      <li class="article__meta-item">
+        <%= partial "tag_icon" %>
+        <ul>
+          <% article.tags.each do |tag| %>
+            <li class="tag">
+              <%= link_to tag, tag_path(tag) %>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+    </ul>
+  </header>
 
-  <%= article.body %>
+  <div class="article__body">
+    <%= article.body %>
+  </div>
 </li>
