@@ -1,24 +1,7 @@
 <li class="article" role="article">
   <header class="article__header">
     <h2 class="article__title"><%= article.title %></h2>
-
-    <ul class="article__meta">
-      <li class="article__meta-item">
-        <%= partial "clock_icon" %>
-        <time><%= article.date.strftime('%b %e, %Y') %></time>
-      </li>
-
-      <li class="article__meta-item">
-        <%= partial "tag_icon" %>
-        <ul>
-          <% article.tags.each do |tag| %>
-            <li class="tag">
-              <%= link_to tag, tag_path(tag) %>
-            </li>
-          <% end %>
-        </ul>
-      </li>
-    </ul>
+    <time class="article__time"><%= article.date.strftime('%b %e, %Y') %></time>
   </header>
 
   <div class="article__body">

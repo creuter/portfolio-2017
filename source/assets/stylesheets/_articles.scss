@@ -17,41 +17,21 @@
   grid-column: 1;
 }
 
-.article__body {
-  grid-column: 2;
-  min-width: 0;
+.article__title {
+  font-size: 1em;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
-.article__meta {
-  display: flex;
-  flex-wrap: wrap;
+.article__time {
   font-size: 0.625em;
-  justify-content: space-between;
   letter-spacing: 0.125em;
   margin-bottom: $base-spacing * 2;
   opacity: 0.75;
   text-transform: uppercase;
 }
 
-.article__meta-item {
-  align-items: center;
-  display: flex;
-  line-height: 2;
-  white-space: nowrap;
-
-  &:first-child {
-    margin-right: 3em;
-  }
-}
-
-.article__meta-icon {
-  @include size(1.25em);
-  margin-right: 0.5em;
-  opacity: 0.9;
-}
-
-.article__title {
-  font-size: 1em;
-  letter-spacing: 0;
-  text-transform: none;
+.article__body {
+  grid-column: 2;
+  min-width: 0;
 }
