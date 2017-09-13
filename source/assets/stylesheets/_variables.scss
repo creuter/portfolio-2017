@@ -3,17 +3,18 @@ $base-line-height: 1.6;
 $base-spacing: $base-line-height * 1em;
 $section-spacing: $base-line-height * 3em;
 
-// Fonts
-$base-font-family: "interface", $font-stack-system;
+// Font Families
+$base-font-family: $font-stack-georgia;
+$heading-font-family: $font-stack-system;
+
+// Font Sizes
+$small-font-size: 0.875em;
 
 // Colors
-$dark-gray: #333;
-$blue: #0078ff;
-$alabaster: #f5f6f7;
-
-$body-background-color: $alabaster;
-$action-color: $blue;
-$base-font-color: mix($body-background-color, $dark-gray, 10%);
+$body-background-color: #314551;
+$base-font-color: tint(#bdbaaa, 35%);
+$heading-font-color: #a87a6c;
+$action-color: #dd7186;
 
 // Other Sizes
 $base-border-radius: 3px;

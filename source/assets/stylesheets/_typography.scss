@@ -11,11 +11,9 @@ body {
   background-color: $body-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
-  line-height: 1.6;
-  padding: $base-spacing;
+  line-height: 1.5;
 
   @media (min-width: 900px) {
-    padding: $base-spacing * 2;
     font-size: 1.125em;
   }
 }
@@ -26,17 +24,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-family: $heading-font-family;
+  font-weight: 600;
   line-height: 1.2;
   margin-top: 0;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: $base-spacing / 2;
 }
 
 h2 {
+  color: $heading-font-color;
   font-size: 0.75em;
   letter-spacing: 0.125em;
   margin-bottom: 0.5em;
@@ -62,9 +62,10 @@ p {
 }
 
 pre {
-  background-color: $dark-gray;
-  color: #fff;
+  background-color: shade($body-background-color, 15%);
   border-radius: $base-border-radius;
-  padding: 1em;
+  color: #fff;
+  font-size: $small-font-size;
   overflow-x: auto;
+  padding: 1em;
 }

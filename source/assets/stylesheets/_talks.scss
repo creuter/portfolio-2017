@@ -1,8 +1,3 @@
-.talks__title {
-  grid-column: 1;
-  margin-bottom: $base-spacing;
-}
-
 .talks {
   grid-column: 2;
   margin-bottom: $section-spacing;
@@ -17,12 +12,11 @@
 }
 
 .talk__description {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
 }
 
 .talk__location {
-  font-size: 0.625em;
-  letter-spacing: 0.125em;
-  opacity: 0.75;
-  text-transform: uppercase;
+  font-size: $small-font-size;
+  opacity: 0.625;
+  font-style: italic;
 }

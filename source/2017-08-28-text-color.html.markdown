@@ -1,8 +1,8 @@
 ---
 
-title: Text color
+title: Tint your gray text
 date: 2017-08-28 14:01 UTC
-tags: color, typography, sass
+tags: color, sass
 
 ---
 

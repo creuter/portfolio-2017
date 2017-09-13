@@ -4,7 +4,6 @@
 
 .article {
   @include padding($base-spacing null $section-spacing);
-  border-top: 1px dotted rgba($base-font-color, 0.25);
 
   @media (min-width: $layout-breakpoint) {
     display: grid;
@@ -24,11 +23,10 @@
 }
 
 .article__time {
-  font-size: 0.625em;
-  letter-spacing: 0.125em;
+  display: block;
+  font-size: $small-font-size;
   margin-bottom: $base-spacing * 2;
   opacity: 0.75;
-  text-transform: uppercase;
 }
 
 .article__body {
