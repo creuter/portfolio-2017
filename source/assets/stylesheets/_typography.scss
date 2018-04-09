@@ -45,7 +45,7 @@ h2 {
 
 h3 {
   font-size: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: $base-spacing / 4;
 }
 
 a {
@@ -57,7 +57,7 @@ a {
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.6;
   margin: 0 0 1em;
 }
 

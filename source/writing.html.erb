@@ -1,0 +1,51 @@
+<header class="page-header">
+  <h1>Writing</h1>
+  <p>
+    Every now and then I write an article on
+    <%= link_to(
+      "Giant Robots Smashing Into Other Giant Robots",
+      "https://robots.thoughtbot.com/"
+     ) %>.
+  </p>
+</header>
+
+<h2 class="section-title">Articles</h2>
+
+<ol class="articles">
+  <%= partial(:article, locals: {
+    title: "Start with the problem",
+    teaser: "Take a moment to define the problem to improve your likelihood of success.",
+    href: "https://robots.thoughtbot.com/start-with-the-problem",
+    date: "March 21, 2018"
+  }) %>
+  <%= partial(:article, locals: {
+    title: "Writing Effective Problem Statements",
+    teaser: "How can we teach product designers to write more effective problem statements?",
+    href: "https://robots.thoughtbot.com/writing-effective-problem-statements",
+    date: "February 11, 2015"
+  }) %>
+  <%= partial(:article, locals: {
+    title: "Ember for Designers: Components",
+    teaser: "Part of our ongoing \“Ember for Designers\” series. Learn how to get started with Ember by leveraging components.",
+    href: "https://robots.thoughtbot.com/ember-for-designers-components",
+    date: "November 24, 2014"
+  }) %>
+  <%= partial(:article, locals: {
+    title: "Ember for Designers: Alternate States",
+    teaser: "Learn how to design Ember apps for loading, error, and empty states.",
+    href: "https://robots.thoughtbot.com/start-with-the-problem",
+    date: "November 17, 2014"
+  }) %>
+  <%= partial(:article, locals: {
+    title: "Expanding the Raleigh Office",
+    teaser: "We’re hiring a designer and a developer in Raleigh. Come join our team.",
+    href: "https://robots.thoughtbot.com/expanding-the-raleigh-office",
+    date: "June 10, 2014"
+  }) %>
+  <%= partial(:article, locals: {
+    title: "Sass's `@content` Directive Use Cases",
+    teaser: "See examples of how the Sass @content directive can empower us to remove duplication in our SCSS, and think more creatively about its organization and implementation.",
+    href: "https://robots.thoughtbot.com/sasss-content-directive",
+    date: "April 22, 2014"
+  }) %>
+</ol>
