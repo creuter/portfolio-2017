@@ -1,35 +1,7 @@
 .articles {
-  grid-column: 1 / -1;
+  grid-column: 2;
 }
 
 .article {
-  @include padding($base-spacing null $section-spacing);
-
-  @media (min-width: $layout-breakpoint) {
-    display: grid;
-    grid-column-gap: $base-spacing;
-    grid-template-columns: minmax(10em, 20%) minmax(30em, 2fr) 1fr;
-  }
-}
-
-.article__header {
-  grid-column: 1;
-}
-
-.article__title {
-  font-size: 1em;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-.article__time {
-  display: block;
-  font-size: $small-font-size;
   margin-bottom: $base-spacing * 2;
-  opacity: 0.75;
-}
-
-.article__body {
-  grid-column: 2;
-  min-width: 0;
 }

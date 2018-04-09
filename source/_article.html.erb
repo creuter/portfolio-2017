@@ -1,10 +1,7 @@
 <li class="article" role="article">
-  <header class="article__header">
-    <h2 class="article__title"><%= article.title %></h2>
-    <time class="article__time"><%= article.date.strftime('%b %e, %Y') %></time>
-  </header>
-
-  <div class="article__body">
-    <%= article.body %>
-  </div>
+  <h3>
+    <%= link_to title, href %>
+  </h3>
+  <p><%= teaser %></p>
+  <time class="meta"><%= date %></time>
 </li>
