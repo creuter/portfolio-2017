@@ -1,8 +1,11 @@
 .projects {
-  display: grid;
-  grid-column-gap: $base-spacing;
-  grid-column: 2 / span 2;
-  grid-row-gap: $base-spacing;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin-bottom: $section-spacing;
+  img {
+    @include margin($base-spacing null);
+    grid-column: 2 / span 2;
+  }
+
+  p {
+    grid-column: 2;
+    margin-bottom: 1em;
+  }
 }
