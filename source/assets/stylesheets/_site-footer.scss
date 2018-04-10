@@ -1,3 +1,4 @@
 .site-footer {
   background-color: shade($body-background-color, 5%);
+  grid-column: 1 / -1;
 }
