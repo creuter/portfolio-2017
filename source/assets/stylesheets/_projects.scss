@@ -1,4 +1,5 @@
 .projects {
+  .project-image,
   img {
     @include margin($base-spacing null);
     grid-column: 2 / span 2;
