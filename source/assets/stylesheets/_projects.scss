@@ -1,14 +1,13 @@
 .projects {
-  .project-image,
-  img {
-    @include margin($base-spacing null);
-    grid-column: 2 / span 2;
-  }
-
   p {
     grid-column: 2;
     margin-bottom: 1em;
   }
+}
+
+.project-image {
+  @include margin($base-spacing null);
+  grid-column: 2 / span 2;
 }
 
 .projects-list {
